@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (map != null){
-                    map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-
 
                     LatLng poi_CausewayPoint = new LatLng(1.436065, 103.786263);
                     Marker cp = map.addMarker(new
@@ -91,10 +89,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (map != null){
-                    map.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-
+                    public void onClick(View v) {
+                        if (map != null){
 
                     LatLng poi_CausewayPoint = new LatLng(1.436065, 103.786263);
                     Marker cp = map.addMarker(new
@@ -125,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (map != null){
-                    map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
                     LatLng poi_CausewayPoint = new LatLng(1.436065, 103.786263);
                     Marker cp = map.addMarker(new
